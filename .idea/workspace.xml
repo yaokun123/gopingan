@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/risk.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/risk.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,20 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="risk.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="risk.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/risk.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="270">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courtnoticemap.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="courtnoticemap.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="414">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -53,11 +54,11 @@
         <option value="$PROJECT_DIR$/models/courtnotice.go" />
         <option value="$PROJECT_DIR$/conf/database.conf" />
         <option value="$PROJECT_DIR$/models/dbresource/utndatanew.go" />
-        <option value="$PROJECT_DIR$/controllers/risk.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/models/dbresource/utndatanew/main.go" />
         <option value="$PROJECT_DIR$/conf/app.conf" />
         <option value="$PROJECT_DIR$/models/courtnoticemap.go" />
+        <option value="$PROJECT_DIR$/controllers/risk.go" />
       </list>
     </option>
   </component>
@@ -71,8 +72,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
-    <option name="y" value="59" />
+    <option name="x" value="224" />
+    <option name="y" value="23" />
     <option name="width" value="1526" />
     <option name="height" value="916" />
   </component>
@@ -123,7 +124,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="129" width="1526" height="916" extended-state="0" />
+    <frame x="224" y="23" width="1526" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23652291" />
@@ -251,21 +252,21 @@
     <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/orm/types.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="248" column="53" selection-start-line="248" selection-start-column="48" selection-end-line="248" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/risk.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="31" />
+          <caret line="217" column="18" selection-start-line="217" selection-start-column="13" selection-end-line="217" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="414">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/risk.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
