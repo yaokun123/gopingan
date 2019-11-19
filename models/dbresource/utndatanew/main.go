@@ -17,5 +17,6 @@ func init()  {
 	}
 
 	dsn := dbuser + ":" + dbpassword + "@" + dbhost + ":" + dbport + "/" + dbname + "?charset=utf8"
+	orm.RegisterDriver("mysql",orm.DRMySQL)
 	orm.RegisterDataBase("default","mysql",dsn)
 }
