@@ -20,7 +20,7 @@ func (this *RiskController) GetInfo()  {
 
 	for _,item := range result{
 		//append(idList, item)
-		fmt.Println(item)
+		fmt.Println(item.Id)
 	}
 	fmt.Println(allCount)
 }
