@@ -14,6 +14,10 @@ type CourtNoticesMap struct {
 
 var O orm.Ormer
 func init()  {
+	//开启调试模式
+	orm.Debug=true
+
+
 	orm.RegisterModel(new(CourtNoticesMap))
 	O = orm.NewOrm()
 }
