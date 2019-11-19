@@ -9,7 +9,7 @@ import (
 type CourtNoticesMap struct {
 	Kid int
 	Id int
-	Company_Name string
+	Company_name string
 }
 
 var O orm.Ormer
