@@ -40,8 +40,8 @@
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/dbresource/utndatanew/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="432">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#20#90#0" expanded="true" />
               </folding>
@@ -98,8 +98,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="248" />
-    <option name="y" value="259" />
+    <option name="x" value="207" />
+    <option name="y" value="127" />
     <option name="width" value="1526" />
     <option name="height" value="916" />
   </component>
@@ -168,7 +168,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="188" y="487" width="1526" height="916" extended-state="0" />
+    <frame x="96" y="76" width="1526" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23382749" />
@@ -295,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/dbresource/utndatanew/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#20#90#0" expanded="true" />
           </folding>

@@ -3,7 +3,7 @@ package utndatanew
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	"fmt"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func init()  {
@@ -18,7 +18,6 @@ func init()  {
 	}
 
 	dsn := dbuser + ":" + dbpassword + "@" + dbhost + ":" + dbport + "/" + dbname + "?charset=utf8"
-	fmt.Println(dsn)
-	orm.RegisterDriver("mysql",orm.DRMySQL)
+	//orm.RegisterDriver("mysql",orm.DRMySQL)
 	orm.RegisterDataBase("default","mysql",dsn)
 }
