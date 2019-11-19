@@ -4,6 +4,7 @@ import (
 	"github.com/astaxie/beego/orm"
 	_"gopingan/models/dbresource/utndatanew"
 	"time"
+	"fmt"
 )
 
 //开庭公告映射表
@@ -27,7 +28,8 @@ func init()  {
 func GetInfoByName(company_name string) []*CourtNoticesMap {
 	var list []*CourtNoticesMap
 	qs := O.QueryTable(new(CourtNoticesMap))
-	qs.Filter("company_name",company_name).OrderBy("-startDate").Limit(0,10).All(&list)
+	count,_ := qs.Filter("company_name",company_name).OrderBy("-startDate").Limit(0,10).All(&list)
+	fmt.Println(count)
 	//qs.Filter("company_name",company_name).All(&list)
 	return list
 }
