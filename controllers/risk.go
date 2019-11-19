@@ -18,7 +18,7 @@ func (this *RiskController) GetInfo()  {
 	result,allCount := models.GetInfoByName(company_name,0)
 	//var idList []int
 
-	for item := range result{
+	for _,item := range result{
 		//append(idList, item)
 		fmt.Println(item)
 	}
