@@ -16,11 +16,12 @@ func (this *RiskController) GetInfo()  {
 
 	company_name := "小米科技有限责任公司"
 	result,allCount := models.GetInfoByName(company_name,0)
-	//var idList []int
-
+	var idList []int
 	for _,item := range result{
-		//append(idList, item)
-		fmt.Println(item.Id)
+		idList = append(idList, item.Id)
 	}
+
+
 	fmt.Println(allCount)
+	fmt.Println(idList)
 }
