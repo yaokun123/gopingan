@@ -15,6 +15,6 @@ func (this *RiskController) GetInfo()  {
 	fmt.Println(digest)
 
 	company_name := "小米科技有限责任公司"
-	result := models.GetInfoByName(company_name)
-	fmt.Println(result)
+	result,allCount := models.GetInfoByName(company_name,0)
+	fmt.Println(result,allCount)
 }
