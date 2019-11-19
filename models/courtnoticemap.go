@@ -25,6 +25,7 @@ func init()  {
 func GetInfoByName(company_name string) []*CourtNoticesMap {
 	var list []*CourtNoticesMap
 	qs := O.QueryTable(new(CourtNoticesMap))
-	qs.Filter("company_name",company_name).OrderBy("-startDate").All(&list)
+	//qs.Filter("company_name",company_name).OrderBy("-startDate").All(&list)
+	qs.Filter("company_name",company_name).All(&list)
 	return list
 }
