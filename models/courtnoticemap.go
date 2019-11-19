@@ -25,8 +25,8 @@ func init()  {
 	O = orm.NewOrm()
 }
 
-func GetInfoByName(company_name string) []*CourtNoticesMap {
-	var list []*CourtNoticesMap
+func GetInfoByName(company_name string) []CourtNoticesMap {
+	var list []CourtNoticesMap
 	qs := O.QueryTable(new(CourtNoticesMap))
 	count,_ := qs.Filter("company_name",company_name).OrderBy("-startDate").Limit(10,0).All(&list)
 	fmt.Println(count)
