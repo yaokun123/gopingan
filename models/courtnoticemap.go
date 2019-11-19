@@ -10,7 +10,7 @@ type CourtNoticesMap struct {
 	Kid int
 	Id int
 	Company_name string
-	StartDate string
+	//StartDate string
 }
 
 var O orm.Ormer
