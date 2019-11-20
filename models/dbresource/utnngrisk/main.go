@@ -19,7 +19,7 @@ func init()  {
 
 	dsn := dbuser + ":" + dbpassword + "@tcp(" + dbhost + ":" + dbport +")" + "/" + dbname + "?charset=utf8"
 	//orm.RegisterDriver("mysql",orm.DRMySQL)
-	orm.RegisterDataBase("default","mysql",dsn)
+	orm.RegisterDataBase("utn_ng_risk","mysql",dsn)
 
 	sqldebug := beego.AppConfig.String("sqldebug")
 
