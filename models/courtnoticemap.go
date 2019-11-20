@@ -24,7 +24,7 @@ func init()  {
 func GetCourtNoticesMapInfoByName(company_name string,offsetNum int) ([]CourtNoticesMap,int64) {
 	var list []CourtNoticesMap
 	qs := O.QueryTable(new(CourtNoticesMap))
-	qs.Filter("company_name",company_name).OrderBy("-startDate","-id").Limit(10,offsetNum).All(&list)
+	qs.Filter("company_name",company_name).OrderBy("-startDate","-id").Limit(5,offsetNum).All(&list)
 	count,_ := qs.Filter("company_name",company_name).Count()
 
 	return list,count
