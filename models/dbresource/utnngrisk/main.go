@@ -24,8 +24,8 @@ func init()  {
 	//设置数据库链接池
 	maxOpenConns,_ := beego.AppConfig.Int("maxopenconns")
 	maxIdleConns,_ := beego.AppConfig.Int("maxidleconns")
-	orm.SetMaxOpenConns("default",maxOpenConns)
-	orm.SetMaxIdleConns("default",maxIdleConns)
+	orm.SetMaxOpenConns("utn_ng_risk",maxOpenConns)
+	orm.SetMaxIdleConns("utn_ng_risk",maxIdleConns)
 
 
 
