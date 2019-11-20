@@ -26,5 +26,6 @@ func (this *RiskController) GetInfo()  {
 	fmt.Println(courtNoticeMapCount)
 	fmt.Println(courtNoticeResult)
 	this.Data["list"] = courtNoticeResult
+	this.Data["json"] = map[string]string{"uid": "123"}
 	this.ServeJSON()
 }
