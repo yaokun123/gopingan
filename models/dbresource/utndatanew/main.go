@@ -20,7 +20,4 @@ func init()  {
 	dsn := dbuser + ":" + dbpassword + "@tcp(" + dbhost + ":" + dbport +")" + "/" + dbname + "?charset=utf8"
 	//orm.RegisterDriver("mysql",orm.DRMySQL)
 	orm.RegisterDataBase("default","mysql",dsn)
-
-	//开启调试模式
-	orm.Debug=true
 }
