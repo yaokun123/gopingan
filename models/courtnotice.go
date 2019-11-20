@@ -13,7 +13,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 	where = strings.TrimRight(where,",")
 	where = "("+where+")"
 
-	sql := "select * from court_notices where id in " + where + " startDate desc,id desc"
+	sql := "select * from court_notices where id in " + where + " order by startDate desc,id desc"
 	O.Using("utn_ng_risk")
 
 	var maps []orm.Params
