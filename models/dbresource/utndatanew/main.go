@@ -21,9 +21,15 @@ func init()  {
 	//orm.RegisterDriver("mysql",orm.DRMySQL)
 	orm.RegisterDataBase("default","mysql",dsn)
 
-	sqldebug := beego.AppConfig.String("sqldebug")
+	//设置数据库链接池
+	maxOpenConns,_ := beego.AppConfig.Int("maxopenconns")
+	maxIdleConns,_ := beego.AppConfig.Int("maxidleconns")
+	orm.SetMaxOpenConns("default",maxOpenConns)
+	orm.SetMaxIdleConns("default",maxIdleConns)
+
 
 	//是否开启数据库调试模式
+	sqldebug := beego.AppConfig.String("sqldebug")
 	if sqldebug == "true"{
 		orm.Debug=true
 	}else{
