@@ -22,7 +22,6 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 
 	//公司名检测plaintiff/defendant
 	var company_name_list []string
-	fmt.Println(maps)
 	for index,item := range maps {
 
 		//截取时间
