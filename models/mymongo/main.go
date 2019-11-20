@@ -33,7 +33,7 @@ func init()  {
 }
 
 type companyname struct {
-	CompanyName string
+	CompanyName string `bson:"company_name"`
 }
 
 func GetMongoInfoByDigest(digest string){
