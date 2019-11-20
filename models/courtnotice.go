@@ -21,7 +21,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 
 	for index,item := range maps {
 		//maps[index]["startDate"] = item["startDate"]
-		fmt.Println(index,item["startDate"][0:10])
+		fmt.Println(index,item["startDate"].(string)[0:10])
 	}
 }
 
