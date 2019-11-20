@@ -21,7 +21,7 @@ func init()  {
 
 
 	//开启调试模式
-	orm.Debug=true
+	//orm.Debug=true
 }
 
 func GetCourtNoticesMapInfoByName(company_name string,offsetNum int) ([]CourtNoticesMap,int64) {
