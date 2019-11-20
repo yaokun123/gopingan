@@ -3,6 +3,7 @@ package models
 import (
 	"strings"
 	_"gopingan/models/dbresource/utnngrisk"
+	"github.com/astaxie/beego/orm"
 )
 
 func GetCourtNoticesInfoByIds(ids []int)  {
@@ -13,8 +14,10 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 
 	sql := "select * from court_notices where id in "+where
 	O.Using("utn_ng_risk")
-	list,_ := O.Raw(sql,ids).Exec()
-	print(list)
+
+	var maps []orm.Params
+	O.Raw(sql,ids).Values(&maps)
+	print(maps)
 }
 
 
