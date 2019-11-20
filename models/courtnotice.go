@@ -2,6 +2,7 @@ package models
 
 import (
 	"strings"
+	_"gopingan/models/dbresource/utnngrisk"
 )
 
 func GetCourtNoticesInfoByIds(ids []int)  {
