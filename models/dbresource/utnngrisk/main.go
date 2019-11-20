@@ -1,4 +1,5 @@
-package utndatanew
+package utnngrisk
+
 
 import (
 	"github.com/astaxie/beego"
@@ -7,11 +8,11 @@ import (
 )
 
 func init()  {
-	dbhost := beego.AppConfig.String("utn_data_new_urls")
-	dbport := beego.AppConfig.String("utn_data_new_port")
-	dbuser := beego.AppConfig.String("utn_data_new_user")
-	dbpassword := beego.AppConfig.String("utn_data_new_pass")
-	dbname := beego.AppConfig.String("utn_data_new_db")
+	dbhost := beego.AppConfig.String("utn_ng_risk_urls")
+	dbport := beego.AppConfig.String("utn_ng_risk_port")
+	dbuser := beego.AppConfig.String("utn_ng_risk_user")
+	dbpassword := beego.AppConfig.String("utn_ng_risk_pass")
+	dbname := beego.AppConfig.String("utn_ng_risk_db")
 
 	if dbport == ""{
 		dbport = "3306"
