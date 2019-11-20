@@ -25,7 +25,11 @@ func init()  {
 		Password:passwd,
 	}
 
-	MgoSession,_ = mgo.DialWithInfo(diaInfo)
+	var err error
+	MgoSession,err = mgo.DialWithInfo(diaInfo)
+	if err != nil{
+		fmt.Println("======",err)
+	}
 }
 
 type companyname struct {
