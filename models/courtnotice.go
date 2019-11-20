@@ -20,9 +20,12 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 	O.Raw(sql,ids).Values(&maps)
 
 	for index,item := range maps {
-		//maps[index]["startDate"] = item["startDate"]
-		fmt.Println(index,item["startDate"].(string)[0:10])
+		maps[index]["startDate"] = item["startDate"].(string)[0:10]
+		maps[index]["update_date"] = item["update_date"].(string)[0:10]
+		maps[index]["create_time"] = item["create_time"].(string)[0:10]
 	}
+
+	fmt.Println(maps)
 }
 
 
