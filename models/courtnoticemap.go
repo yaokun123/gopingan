@@ -8,7 +8,7 @@ import (
 
 //开庭公告映射表
 type CourtNoticesMap struct {
-	Kid int	`orm: "description(注释这么写)"`
+	Kid int	`orm:"description(注释这么写)"`
 	Id int
 	Company_name string
 	StartDate time.Time `orm:"column(startDate);description(注释这么写)"`
