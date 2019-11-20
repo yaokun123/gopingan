@@ -4,7 +4,6 @@ import (
 	"strings"
 	_"gopingan/models/dbresource/utnngrisk"
 	"github.com/astaxie/beego/orm"
-	"fmt"
 	"unicode/utf8"
 )
 
@@ -59,7 +58,6 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 		//处理被告人/被告/被上诉人/被申请人
 		if item["defendant"] != nil{
 			defendants := strings.Split(item["defendant"].(string),",")
-			fmt.Println(defendants)
 			for index2,company_name := range defendants{
 				if utf8.RuneCountInString(company_name) > 4{//小于4个字的不取公司名
 					company_name_list = append(company_name_list,company_name)
