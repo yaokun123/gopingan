@@ -28,8 +28,9 @@ func (this *RiskController) GetInfo()  {
 	go getCourtNotice(company_name,courtNoticeResultChannel,courtNoticeMapCountChannel,&wg)
 
 
-	wg.Wait()
 	fmt.Println("haha")
+	wg.Wait()
+	fmt.Println("哈哈")
 	courtNoticeResult := <- courtNoticeResultChannel
 	courtNoticeMapCount := <- courtNoticeMapCountChannel
 	fmt.Println(courtNoticeMapCount)
