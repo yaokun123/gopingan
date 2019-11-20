@@ -18,7 +18,7 @@ func (this *RiskController) GetInfo()  {
 	company_name := mymongo.GetMongoInfoByDigest(digest)
 
 	//创建waitGroup
-	wg := sync.WaitGroup{}
+	var wg sync.WaitGroup
 
 
 	//1、开庭公告
