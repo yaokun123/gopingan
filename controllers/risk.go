@@ -32,7 +32,6 @@ func (this *RiskController) GetInfo()  {
 	courtNoticeResult := <- courtNoticeResultChannel
 	courtNoticeMapCount := <- courtNoticeMapCountChannel
 	fmt.Println(courtNoticeMapCount)
-	fmt.Println(courtNoticeResult)
 	this.Data["json"] = courtNoticeResult
 	this.ServeJSON()
 }
