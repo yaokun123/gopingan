@@ -24,7 +24,7 @@ func (this *RiskController) GetInfo()  {
 	//1、开庭公告
 	courtNoticeResultChannel := make(chan []orm.Params)
 	courtNoticeMapCountChannel := make(chan int64)
-	//wg.Add(1)
+	wg.Add(1)
 	go getCourtNotice(company_name,courtNoticeResultChannel,courtNoticeMapCountChannel,&wg)
 
 
