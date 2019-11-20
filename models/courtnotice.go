@@ -51,8 +51,8 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 		}
 		maps[index]["plaintiff"] = plaintiffs
 
-		/*defendants := strings.Split(item["defendant"].(string),",")
-		for index3,company_name := range defendants{
+		defendants := strings.Split(item["defendant"].(string),",")
+		for index2,company_name := range defendants{
 			if utf8.RuneCountInString(company_name) > 4{//小于4个字的不取公司名
 				company_name_list = append(company_name_list,company_name)
 			}else if utf8.RuneCountInString(company_name) == 3{
@@ -60,15 +60,15 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 				first_char := string(tmp[0:1])
 				end_char := string(tmp[1:1])
 				result_name := first_char + "*" + end_char
-				plaintiffs[index3] = result_name
+				plaintiffs[index2] = result_name
 			}else if utf8.RuneCountInString(company_name) == 2{
 				tmp := []rune(company_name)
 				first_char := string(tmp[0:1])
 				result_name := first_char + "*"
-				plaintiffs[index3] = result_name
+				plaintiffs[index2] = result_name
 			}
 		}
-		maps[index]["defendant"] = defendants*/
+		maps[index]["defendant"] = defendants
 	}
 
 	fmt.Println(maps)
