@@ -29,6 +29,7 @@ func (this *RiskController) GetInfo()  {
 
 
 	wg.Wait()
+	fmt.Println("haha")
 	courtNoticeResult := <- courtNoticeResultChannel
 	courtNoticeMapCount := <- courtNoticeMapCountChannel
 	fmt.Println(courtNoticeMapCount)
