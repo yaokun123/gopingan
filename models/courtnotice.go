@@ -4,6 +4,7 @@ import (
 	"strings"
 	_"gopingan/models/dbresource/utnngrisk"
 	"github.com/astaxie/beego/orm"
+	"fmt"
 )
 
 func GetCourtNoticesInfoByIds(ids []int)  {
@@ -17,7 +18,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 
 	var maps []orm.Params
 	O.Raw(sql,ids).Values(&maps)
-	print(maps)
+	fmt.Println(maps)
 }
 
 
