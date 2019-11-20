@@ -35,6 +35,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 			maps[index]["create_time"] = item["create_time"].(string)[0:10]
 		}
 
+		fmt.Println(maps)
 		//处理公诉人/原告/上诉人/申请人
 		if item["plaintiff"] != nil{
 			plaintiffs := strings.Split(item["plaintiff"].(string),",")
@@ -44,7 +45,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 				}else if utf8.RuneCountInString(company_name) == 3{
 					tmp := []rune(company_name)
 					first_char := string(tmp[0:1])
-					end_char := string(tmp[2:1])
+					end_char := string(tmp[1:1])
 					result_name := first_char + "*" + end_char
 					plaintiffs[index2] = result_name
 				}else if utf8.RuneCountInString(company_name) == 2{
@@ -67,7 +68,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 				}else if utf8.RuneCountInString(company_name) == 3{
 					tmp := []rune(company_name)
 					first_char := string(tmp[0:1])
-					end_char := string(tmp[2:1])
+					end_char := string(tmp[1:1])
 					result_name := first_char + "*" + end_char
 					defendants[index2] = result_name
 				}else if utf8.RuneCountInString(company_name) == 2{
