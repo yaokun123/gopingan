@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/mongo/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/database.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/database.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/courtnotice.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/courtnotice.go" afterDir="false" />
-    </list>
+    <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +14,8 @@
       <file leaf-file-name="risk.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/risk.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="23" column="35" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#21#85#0" expanded="true" />
               </folding>
@@ -31,7 +26,7 @@
       <file leaf-file-name="courtnoticemap.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
+            <state relative-caret-position="306">
               <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
               <folding>
                 <element signature="e#16#108#0" expanded="true" />
@@ -43,17 +38,17 @@
       <file leaf-file-name="courtnotice.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
+            <state relative-caret-position="18">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/mongo/main.go">
+        <entry file="file://$PROJECT_DIR$/models/mymongo/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+            <state relative-caret-position="535">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
               <folding>
                 <element signature="e#15#82#0" expanded="true" />
               </folding>
@@ -98,12 +93,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/conf/app.conf" />
         <option value="$PROJECT_DIR$/models/dbresource/utndatanew/main.go" />
-        <option value="$PROJECT_DIR$/controllers/risk.go" />
         <option value="$PROJECT_DIR$/models/dbresource/utnngrisk/main.go" />
         <option value="$PROJECT_DIR$/models/courtnoticemap.go" />
         <option value="$PROJECT_DIR$/models/courtnotice.go" />
         <option value="$PROJECT_DIR$/conf/database.conf" />
         <option value="$PROJECT_DIR$/models/mongo/main.go" />
+        <option value="$PROJECT_DIR$/controllers/risk.go" />
+        <option value="$PROJECT_DIR$/models/mymongo/main.go" />
       </list>
     </option>
   </component>
@@ -117,8 +113,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="437" />
-    <option name="y" value="42" />
+    <option name="x" value="475" />
+    <option name="y" value="59" />
     <option name="width" value="1526" />
     <option name="height" value="916" />
   </component>
@@ -135,29 +131,6 @@
             <path>
               <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
               <item name="gopingan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopingan" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopingan" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopingan" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dbresource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gopingan" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="dbresource" type="462c0819:PsiDirectoryNode" />
-              <item name="utndatanew" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,7 +165,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="854" y="43" width="1526" height="916" extended-state="0" />
+    <frame x="746" y="131" width="1526" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24595687" />
@@ -233,7 +206,8 @@
     <MESSAGE value="limit" />
     <MESSAGE value="orm注释写法" />
     <MESSAGE value="sql debug" />
-    <option name="LAST_COMMIT_MESSAGE" value="sql debug" />
+    <MESSAGE value="mongo" />
+    <option name="LAST_COMMIT_MESSAGE" value="mongo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/controllers/risk.go">
@@ -263,7 +237,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/mongo/main.go">
+    <entry file="file://$PROJECT_DIR$/models/mymongo/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
@@ -437,30 +411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/risk.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="35" />
-          <folding>
-            <element signature="e#21#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/astaxie/beego/orm/models_boot.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
           <caret line="305" column="23" lean-forward="true" selection-start-line="305" selection-start-column="23" selection-end-line="305" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#16#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -478,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/dbresource/utndatanew/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -492,10 +439,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+          <folding>
+            <element signature="e#16#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/risk.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#21#85#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/globalsign/mgo/session.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="2488" column="41" lean-forward="true" selection-start-line="2488" selection-start-column="41" selection-end-line="2488" selection-end-column="41" />
+          <caret line="702" column="41" selection-start-line="702" selection-start-column="41" selection-end-line="702" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -506,10 +480,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/mongo/main.go">
+    <entry file="file://$PROJECT_DIR$/models/mymongo/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        <state relative-caret-position="535">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding>
             <element signature="e#15#82#0" expanded="true" />
           </folding>
