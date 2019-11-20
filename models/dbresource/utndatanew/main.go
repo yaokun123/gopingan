@@ -20,4 +20,14 @@ func init()  {
 	dsn := dbuser + ":" + dbpassword + "@tcp(" + dbhost + ":" + dbport +")" + "/" + dbname + "?charset=utf8"
 	//orm.RegisterDriver("mysql",orm.DRMySQL)
 	orm.RegisterDataBase("default","mysql",dsn)
+
+	sqldebug := beego.AppConfig.String("sqldebug")
+
+	//是否开启数据库调试模式
+	if sqldebug == "true"{
+		orm.Debug=true
+	}else{
+		orm.Debug=false
+	}
+
 }

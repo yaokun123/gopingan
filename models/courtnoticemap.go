@@ -19,9 +19,6 @@ func init()  {
 	orm.RegisterModel(new(CourtNoticesMap))
 	O = orm.NewOrm()
 
-
-	//开启调试模式
-	//orm.Debug=true
 }
 
 func GetCourtNoticesMapInfoByName(company_name string,offsetNum int) ([]CourtNoticesMap,int64) {
