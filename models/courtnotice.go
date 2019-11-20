@@ -10,7 +10,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 	where = strings.TrimRight(where,",")
 	where = "("+where+")"
 
-	sql := "select * form court_notices where id in "+where
+	sql := "select * from court_notices where id in "+where
 	list,_ := O.Raw(sql,ids).Exec()
 	print(list)
 }
