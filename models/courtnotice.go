@@ -8,7 +8,7 @@ import (
 func GetCourtNoticesInfoByIds(ids []int)  {
 	length := len(ids)
 	where := strings.Repeat("?,",length)
-	where = where[0:-1]
+	where = strings.TrimRight(where,",")
 	fmt.Println(where)
 }
 
