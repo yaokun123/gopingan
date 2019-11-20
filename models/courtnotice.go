@@ -58,12 +58,12 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 			}else if utf8.RuneCountInString(company_name) == 3{
 				tmp := []rune(company_name)
 				first_char := string(tmp[0:1])
-				end_char := string(tmp[2:1])
+				end_char := string(tmp[1:1])
 				result_name := first_char + "*" + end_char
 				plaintiffs[index3] = result_name
 			}else if utf8.RuneCountInString(company_name) == 2{
 				tmp := []rune(company_name)
-				first_char := string(tmp[0:1])
+				first_char := string(tmp[1:1])
 				result_name := first_char + "*"
 				plaintiffs[index3] = result_name
 			}
