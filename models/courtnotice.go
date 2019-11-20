@@ -22,6 +22,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 
 	//公司名检测plaintiff/defendant
 	var company_name_list []string
+	fmt.Println(maps)
 	for index,item := range maps {
 
 		//截取时间
@@ -34,8 +35,6 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 		if item["create_time"] != nil{
 			maps[index]["create_time"] = item["create_time"].(string)[0:10]
 		}
-
-		fmt.Println(maps)
 		//处理公诉人/原告/上诉人/申请人
 		if item["plaintiff"] != nil{
 			plaintiffs := strings.Split(item["plaintiff"].(string),",")
