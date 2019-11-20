@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/models/courtnotice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/risk.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/risk.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/courtnotice.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/courtnotice.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="courtnotice.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="180">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
                 <element signature="e#16#44#0" expanded="true" />
               </folding>
@@ -77,8 +75,8 @@
         <option value="$PROJECT_DIR$/conf/app.conf" />
         <option value="$PROJECT_DIR$/models/courtnoticemap.go" />
         <option value="$PROJECT_DIR$/models/dbresource/utndatanew/main.go" />
-        <option value="$PROJECT_DIR$/models/courtnotice.go" />
         <option value="$PROJECT_DIR$/controllers/risk.go" />
+        <option value="$PROJECT_DIR$/models/courtnotice.go" />
       </list>
     </option>
   </component>
@@ -318,8 +316,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="180">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="e#16#44#0" expanded="true" />
           </folding>
