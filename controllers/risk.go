@@ -21,7 +21,7 @@ func (this *RiskController) GetInfo()  {
 		idList = append(idList, item.Id)
 	}
 
-	//models.GetCourtNoticesInfoByIds(idList)
+	models.GetCourtNoticesInfoByIds(idList)
 
 	fmt.Println(allCount)
 	fmt.Println(idList)
