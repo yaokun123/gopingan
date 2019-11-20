@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="" />
+    <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/courtnotice.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/courtnotice.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +41,8 @@
       <file leaf-file-name="courtnotice.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="396">
+              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
               <folding>
                 <element signature="e#16#44#0" expanded="true" />
               </folding>
@@ -100,8 +103,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="429" />
-    <option name="y" value="44" />
+    <option name="x" value="531" />
+    <option name="y" value="38" />
     <option name="width" value="1526" />
     <option name="height" value="916" />
   </component>
@@ -152,7 +155,7 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="429" y="44" width="1526" height="916" extended-state="0" />
+    <frame x="531" y="38" width="1526" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23652291" />
@@ -327,8 +330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="396">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
           <folding>
             <element signature="e#16#44#0" expanded="true" />
           </folding>
