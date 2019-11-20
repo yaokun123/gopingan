@@ -4,6 +4,7 @@ import (
 	"github.com/astaxie/beego"
 	"fmt"
 	"gopingan/models/mymongo"
+	"gopingan/models"
 )
 
 type RiskController struct {
@@ -12,18 +13,16 @@ type RiskController struct {
 
 func (this *RiskController) GetInfo()  {
 	digest := this.GetString("digest")
-	fmt.Println(digest)
-	mymongo.GetMongoInfoByDigest(digest)
+	company_name := mymongo.GetMongoInfoByDigest(digest)
 
-	/*company_name := "小米科技有限责任公司"
-	result,allCount := models.GetCourtNoticesMapInfoByName(company_name,0)
+	//开庭公告
+	courtNoticeMapResult,courtNoticeMapCount := models.GetCourtNoticesMapInfoByName(company_name,0)
 	var idList []int
-	for _,item := range result{
+	for _,item := range courtNoticeMapResult{
 		idList = append(idList, item.Id)
 	}
+	courtNoticeResult := models.GetCourtNoticesInfoByIds(idList)
 
-	models.GetCourtNoticesInfoByIds(idList)
-
-	fmt.Println(allCount)
-	fmt.Println(idList)*/
+	fmt.Println(courtNoticeMapCount)
+	fmt.Println(courtNoticeResult)
 }

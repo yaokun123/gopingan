@@ -36,7 +36,7 @@ type companyname struct {
 	CompanyName string `bson:"company_name"`
 }
 
-func GetMongoInfoByDigest(digest string){
+func GetMongoInfoByDigest(digest string) string {
 	var aObj companyname
 	query := func(c *mgo.Collection) error{//匿名函数
 		return c.Find(bson.M{"company_name_digest":digest}).One(&aObj)
@@ -45,7 +45,7 @@ func GetMongoInfoByDigest(digest string){
 	if err != nil{
 		fmt.Println(err)
 	}
-	fmt.Println(aObj)
+	return aObj.CompanyName
 }
 
 type dbCollection func(collection *mgo.Collection) (err error)

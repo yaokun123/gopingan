@@ -8,7 +8,7 @@ import (
 	"unicode/utf8"
 )
 
-func GetCourtNoticesInfoByIds(ids []int)  {
+func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 	length := len(ids)
 	where := strings.Repeat("?,",length)
 	where = strings.TrimRight(where,",")
@@ -81,7 +81,7 @@ func GetCourtNoticesInfoByIds(ids []int)  {
 
 	}
 
-	fmt.Println(maps)
+	return maps
 }
 
 
