@@ -16,6 +16,7 @@ type RiskController struct {
 func (this *RiskController) GetInfo()  {
 	digest := this.GetString("digest")
 	company_name := mymongo.GetMongoInfoByDigest(digest)
+	fmt.Println(company_name)
 
 	//创建waitGroup
 	var wg sync.WaitGroup
