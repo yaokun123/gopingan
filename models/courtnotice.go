@@ -87,7 +87,7 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 	}
 
 	//最后再处理一次数据，将digest加上
-	for index,item := range maps{
+	/*for index,item := range maps{
 		var plaintiffDigests []string
 		if item["plaintiff"] != nil{
 			for _,v := range item["plaintiff"].([]string){
@@ -103,7 +103,7 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 			}
 		}
 		maps[index]["defendant_digest"] = defendantDigests
-	}
+	}*/
 
 	return maps
 }
