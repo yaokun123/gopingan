@@ -33,7 +33,7 @@ func GetCompanyLawsuitParsedInfoByUuids(uuids []string) []orm.Params {
 	for index,item := range maps2 {
 		//截取时间
 		if item["submittime"] != nil{
-			maps2[index]["submittime"] = item["startDate"].(string)[0:10]
+			maps2[index]["submittime"] = item["submittime"].(string)[0:10]
 		}
 	}
 
