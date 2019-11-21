@@ -42,7 +42,7 @@ type digest struct {
 func GetMongoInfoByDigest(digest string) string {
 	var aObj companyname
 	query := func(c *mgo.Collection) error{//匿名函数
-		return c.Find(bson.M{"company_name_digest":digest,"deleted":0}).One(&aObj)
+		return c.Find(bson.M{"company_name_digest":digest,"deleted":bson.M{"neq":1}}).One(&aObj)
 	}
 	err := handlerCollection("ic",query)
 	if err != nil{
@@ -54,7 +54,7 @@ func GetMongoInfoByDigest(digest string) string {
 func GetMongoInfoByCompanyName(company_name string) string {
 	var aObj digest
 	query := func(c *mgo.Collection) error{//匿名函数
-		return c.Find(bson.M{"company_name":company_name,"deleted":0}).One(&aObj)
+		return c.Find(bson.M{"company_name":company_name,"deleted":bson.M{"neq":1}}).One(&aObj)
 	}
 	err := handlerCollection("ic",query)
 	if err != nil{
