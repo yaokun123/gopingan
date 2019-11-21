@@ -32,7 +32,7 @@ func (this *RiskController) GetInfo()  {
 	companyLawsuitParsedInfoResultChannel := make(chan []orm.Params,2)
 	companyLawsuitParsedInfoMapCountChannel := make(chan int64,2)
 	wg.Add(1)
-	go getCompanyLawsuitParsedInfo(company_name,companyLawsuitParsedInfoResultChannel,companyLawsuitParsedInfoMapCountChannel,&wg)
+	go getCompanyLawsuitParsedInfo(company_name,companyLawsuitParsedInfoResultChannel,companyLawsuitParsedInfoMapCountChannel,&wg,digest)
 
 
 	//数据统一在后面取
@@ -74,13 +74,13 @@ func getCourtNotice(company_name string,courtNoticeResultChannel chan []orm.Para
 }
 
 //法律诉讼
-func getCompanyLawsuitParsedInfo(company_name string,companyLawsuitParsedInfoResultChannel chan []orm.Params,companyLawsuitParsedInfoMapCountChannel chan int64,wg *sync.WaitGroup){
+func getCompanyLawsuitParsedInfo(company_name string,companyLawsuitParsedInfoResultChannel chan []orm.Params,companyLawsuitParsedInfoMapCountChannel chan int64,wg *sync.WaitGroup,digest string){
 	companyLawsuitParsedInfoMapResult,companyLawsuitParsedInfoMapCount := models.GetCompanyLawsuitParsedInfoMapInfoByName(company_name,0)
 	var uuidList []string
 	for _,item := range companyLawsuitParsedInfoMapResult{
 		uuidList = append(uuidList,item.Uuid)
 	}
-	companyLawsuitParsedInfoResult := models.GetCompanyLawsuitParsedInfoByUuids(uuidList)
+	companyLawsuitParsedInfoResult := models.GetCompanyLawsuitParsedInfoByUuids(uuidList,digest)
 
 	companyLawsuitParsedInfoResultChannel <- companyLawsuitParsedInfoResult
 	companyLawsuitParsedInfoMapCountChannel <- companyLawsuitParsedInfoMapCount
