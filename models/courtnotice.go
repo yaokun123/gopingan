@@ -5,6 +5,7 @@ import (
 	_"gopingan/models/dbresource/utnngrisk"
 	"github.com/astaxie/beego/orm"
 	"unicode/utf8"
+	"gopingan/models/mymongo"
 )
 
 func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
@@ -77,6 +78,31 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 			maps[index]["defendant"] = defendants
 		}
 
+	}
+
+	//获取company_name_2_digest的map
+	var company_name_2_digest_map map[string]string
+	for _,v := range company_name_list{
+		company_name_2_digest_map[v] = mymongo.GetMongoInfoByCompanyName(v)
+	}
+
+	//最后再处理一次数据，将digest加上
+	for index,item := range maps{
+		var plaintiffDigests []string
+		if item["plaintiff"] != nil{
+			for _,v := range item["plaintiff"]{
+				plaintiffDigests = append(plaintiffDigests,company_name_2_digest_map[v])
+			}
+		}
+		maps[index]["plaintiff_digest"] = plaintiffDigests
+
+		var defendantDigests []string
+		if item["defendant"] != nil{
+			for _,v := range item["defendant"]{
+				defendantDigests = append(defendantDigests,company_name_2_digest_map[v])
+			}
+		}
+		maps[index]["defendant_digest"] = defendantDigests
 	}
 
 	return maps
