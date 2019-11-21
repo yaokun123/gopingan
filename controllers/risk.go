@@ -80,9 +80,9 @@ func getCompanyLawsuitParsedInfo(company_name string,companyLawsuitParsedInfoRes
 	for _,item := range companyLawsuitParsedInfoMapResult{
 		uuidList = append(uuidList,item.Uuid)
 	}
-	models.GetCompanyLawsuitParsedInfoByUuids(uuidList)
+	companyLawsuitParsedInfoResult := models.GetCompanyLawsuitParsedInfoByUuids(uuidList)
 
-	companyLawsuitParsedInfoResultChannel <- nil
+	companyLawsuitParsedInfoResultChannel <- companyLawsuitParsedInfoResult
 	companyLawsuitParsedInfoMapCountChannel <- companyLawsuitParsedInfoMapCount
 	wg.Done()
 }
