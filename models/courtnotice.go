@@ -90,7 +90,7 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 	for index,item := range maps{
 		var plaintiffDigests []string
 		if item["plaintiff"] != nil{
-			for _,v := range item["plaintiff"]{
+			for _,v := range item["plaintiff"].([]string){
 				plaintiffDigests = append(plaintiffDigests,company_name_2_digest_map[v])
 			}
 		}
@@ -98,7 +98,7 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 
 		var defendantDigests []string
 		if item["defendant"] != nil{
-			for _,v := range item["defendant"]{
+			for _,v := range item["defendant"].([]string){
 				defendantDigests = append(defendantDigests,company_name_2_digest_map[v])
 			}
 		}
