@@ -22,15 +22,15 @@ func (this *RiskController) GetInfo()  {
 
 
 	//1、开庭公告
-	courtNoticeResultChannel := make(chan []orm.Params)
-	courtNoticeMapCountChannel := make(chan int64)
+	courtNoticeResultChannel := make(chan []orm.Params,2)
+	courtNoticeMapCountChannel := make(chan int64,2)
 	wg.Add(1)
 	go getCourtNotice(company_name,courtNoticeResultChannel,courtNoticeMapCountChannel,&wg)
 
 
-	fmt.Println("haha")
+
+	//数据统一在后面取
 	wg.Wait()
-	fmt.Println("哈哈")
 	courtNoticeResult := <- courtNoticeResultChannel
 	courtNoticeMapCount := <- courtNoticeMapCountChannel
 	fmt.Println(courtNoticeMapCount)
