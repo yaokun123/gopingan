@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09bc05ca-22bf-471d-8b24-e596b7a372d4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/models/courtnotice.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/courtnotice.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/companylawsuitparsedinfo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/companylawsuitparsedinfomap.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/risk.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/risk.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,45 +14,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="2">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="courtnotice.go" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="130">
+                    <caret line="24" column="18" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="18" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="risk.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="risk.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/risk.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            <state relative-caret-position="618">
+              <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courtnoticemap.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
+      <file leaf-file-name="companylawsuitparsedinfomap.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/companylawsuitparsedinfomap.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="378">
+              <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
               <folding>
-                <element signature="e#16#108#0" expanded="true" />
+                <element signature="e#16#66#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="courtnotice.go" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
+      <file leaf-file-name="companylawsuitparsedinfo.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/companylawsuitparsedinfo.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/mymongo/main.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            <state relative-caret-position="144">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="39" />
               <folding>
-                <element signature="e#17#125#0" expanded="true" />
+                <element signature="e#16#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,9 +100,12 @@
         <option value="$PROJECT_DIR$/models/dbresource/utndatanew/main.go" />
         <option value="$PROJECT_DIR$/models/dbresource/utnngrisk/main.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/controllers/risk.go" />
         <option value="$PROJECT_DIR$/models/mymongo/main.go" />
         <option value="$PROJECT_DIR$/models/courtnotice.go" />
+        <option value="$PROJECT_DIR$/models/mymongo/companylawsuitparsedinfomap.go" />
+        <option value="$PROJECT_DIR$/models/companylawsuitparsedinfo.go" />
+        <option value="$PROJECT_DIR$/models/companylawsuitparsedinfomap.go" />
+        <option value="$PROJECT_DIR$/controllers/risk.go" />
       </list>
     </option>
   </component>
@@ -103,8 +119,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="283" />
-    <option name="y" value="115" />
+    <option name="x" value="150" />
+    <option name="y" value="69" />
     <option name="width" value="1526" />
     <option name="height" value="916" />
   </component>
@@ -121,6 +137,11 @@
             <path>
               <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
               <item name="gopingan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gopingan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gopingan" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,6 +160,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/models/dbresource/utndatanew" />
     </key>
   </component>
@@ -155,7 +177,8 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="283" y="115" width="1526" height="916" extended-state="0" />
+    <frame x="150" y="69" width="1526" height="916" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25606468" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -201,24 +224,12 @@
     <MESSAGE value="测试" />
     <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/dbresource/utndatanew/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/dbresource/utnngrisk/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          <folding>
-            <element signature="e#19#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -559,23 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/risk.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#16#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/mymongo/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -588,8 +582,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/courtnotice.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="130">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/companylawsuitparsedinfo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#16#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/companylawsuitparsedinfomap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="94" selection-start-line="21" selection-start-column="94" selection-end-line="21" selection-end-column="94" />
+          <folding>
+            <element signature="e#16#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/courtnoticemap.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#16#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/risk.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
         </state>
       </provider>
     </entry>
