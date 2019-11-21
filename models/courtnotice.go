@@ -9,6 +9,7 @@ import (
 )
 
 func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
+	O := orm.NewOrm()
 	length := len(ids)
 	where := strings.Repeat("?,",length)
 	where = strings.TrimRight(where,",")

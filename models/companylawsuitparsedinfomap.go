@@ -20,6 +20,7 @@ func init()  {
 }
 
 func GetCompanyLawsuitParsedInfoMapInfoByName(company_name string,offsetNum int) ([]CompanyLawsuitParsedInfoMap,int64) {
+	O := orm.NewOrm()
 	var list []CompanyLawsuitParsedInfoMap
 	O.Using("default")
 	qs := O.QueryTable(new(CompanyLawsuitParsedInfoMap))

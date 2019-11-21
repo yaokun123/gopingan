@@ -6,6 +6,7 @@ import (
 )
 
 func GetCompanyLawsuitParsedInfoByUuids(uuids []string) []orm.Params {
+	O := orm.NewOrm()
 	length := len(uuids)
 	where := strings.Repeat("?,",length)
 	where = strings.TrimRight(where,",")

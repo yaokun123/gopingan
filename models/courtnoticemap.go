@@ -14,14 +14,13 @@ type CourtNoticesMap struct {
 	StartDate time.Time `orm:"column(startDate);description(注释这么写)"`
 }
 
-var O orm.Ormer
+
 func init()  {
 	orm.RegisterModel(new(CourtNoticesMap))
-	O = orm.NewOrm()
-
 }
 
 func GetCourtNoticesMapInfoByName(company_name string,offsetNum int) ([]CourtNoticesMap,int64) {
+	O := orm.NewOrm()
 	var list []CourtNoticesMap
 	O.Using("default")
 	qs := O.QueryTable(new(CourtNoticesMap))
