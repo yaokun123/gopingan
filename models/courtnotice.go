@@ -81,7 +81,8 @@ func GetCourtNoticesInfoByIds(ids []int) []orm.Params {
 	}
 
 	//获取company_name_2_digest的map
-	var company_name_2_digest_map map[string]string
+	company_name_2_digest_map := make(map[string]string)
+
 	for _,v := range company_name_list{
 		company_name_2_digest_map[v] = mymongo.GetMongoInfoByCompanyName(v)
 	}
